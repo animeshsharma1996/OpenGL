@@ -71,8 +71,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>E:\Projects\OpenGL\glad\include;E:\Projects\OpenGL\glfw-3.3.8\glfw-3.3.8\include;$(IncludePath)</IncludePath>
-    <LibraryPath>E:\Projects\OpenGL\glfw-3.3.8\glfw-3.3.8\src;$(LibraryPath)</LibraryPath>
+    <IncludePath>G:\Projects\OpenGL\OpenGL\OpenGL\glad\include\KHR;G:\Projects\OpenGL\OpenGL\OpenGL\glad\include\glad;G:\Projects\OpenGL\glfw-3.3.8.bin.WIN64\include;$(IncludePath)</IncludePath>
+    <LibraryPath>G:\Projects\OpenGL\glfw-3.3.8.bin.WIN64\lib-vc2022;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -134,6 +134,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Application.h" />
+    <ClInclude Include="glad\include\glad\glad.h" />
+    <ClInclude Include="glad\include\KHR\khrplatform.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp" />
